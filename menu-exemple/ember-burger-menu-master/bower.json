@@ -1,0 +1,6 @@
+{
+  "name": "ember-burger-menu",
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
