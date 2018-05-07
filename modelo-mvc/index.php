@@ -19,14 +19,15 @@
     <main role="main">
       <!-- MONTA O CORPO PRINCIPAL DE CADA PAGINA -->
       <?php  
+          $Url[0] = (@$Url[0] === 'index' || @$Url[0] === 'index.php' ? 'index' : $Url[0]);
           $Url[1] = (empty($Url[1]) ? null : $Url[1]);
 
-          if(@file_exists(REQUIRE_PATH . '/' . $Url[0] . '.php')){
-              require REQUIRE_PATH . '/' . $Url[0] . '.php';
-          }else if (@file_exists(REQUIRE_PATH . '/' . $Url[0] . '/' . $Url[1] . '.php')) {
-              require REQUIRE_PATH . '/' . $Url[0] . '/' . $Url[1] . '.php'; 
-          }else if($Url[0] == 'index.php'){
-              require REQUIRE_PATH . 'index.php';
+          if(@file_exists(REQUIRE_PATH . $Url[0] . '.php')){
+              require REQUIRE_PATH . $Url[0] . '.php';
+          }else if (@file_exists(REQUIRE_PATH . $Url[0] . '/' . $Url[1] . '.php')) {
+              require REQUIRE_PATH . $Url[0] . '/' . $Url[1] . '.php'; 
+          }else if (@file_exists(REQUIRE_PATH . $Url[0] . '/' . $Url[1] . '/' . $Url[2] . '.php')) {
+              require REQUIRE_PATH . $Url[0] . '/' . $Url[1] . '/' . $Url[2] . '.php'; 
           }else{
               require REQUIRE_PATH . '404.php';
           }

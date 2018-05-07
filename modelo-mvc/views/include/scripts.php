@@ -1,8 +1,10 @@
 <script src="views/assets/js/jquery-3.3.1.min.js"></script>
-<script src="views/assets/js/jquery-slim.min.js"></script>
+<script src="views/assets/js/toastr/toastr.min.js"></script>
+<!-- <script src="views/assets/js/jquery-slim.min.js"></script> -->
 <script src="views/assets/js/popper.min.js"></script>
 <script src="views/assets/js/bootstrap.min.js"></script>
 <script src="views/assets/js/holder.min.js"></script>
+<script src="views/assets/js/custom.js"></script>
 <script>
   // Example starter JavaScript for disabling form submissions if there are invalid fields
   (function() {

@@ -1,3 +1,4 @@
+<div id="topo"></div>
 <div class="container">
   <div class="py-5 text-center">
     <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
@@ -5,11 +6,11 @@
     <p class="lead">Deixe sua mensagem com informando sua dúvida ou nos mande a sua sugestão!</p>
   </div>
 
-  <?php echo (isset($retorno[0]) ? $retorno[0] : '') ?>  
   <div class="row">
     <div class="col-md-12 order-md-1">
+      <div id="resultado"></div>
       <h4 class="mb-3">Contato</h4>
-      <form class="needs-validation" novalidate action="" method="POST">
+      <form class="needs-validation" novalidate action="" method="POST" id="formContato">
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="firstName">Nome</label>

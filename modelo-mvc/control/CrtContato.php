@@ -46,7 +46,7 @@ class CrtContato
     public function getById()
     {
     	$idcontato = $_GET['idContato'];
-    	return $this->contatoDao->gettById();
+    	return $this->contatoDao->gettById($idcontato);
     }
 
     /**
@@ -66,15 +66,27 @@ class CrtContato
     	];
 
     	if($this->contatoDao->cadastrarContato($dados)){
-    		$this->msg[] = '<div class="alert alert-success">
-                                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                                  <i class="icon-ok"></i><strong>Sucesso!</strong> Sua mesagem foi enviada.
-                                </div>'; 
-    	}else{
-    		$this->msg[] = '<div class="alert alert-danger">
-	                              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-	                              <i class="icon-remove-sign"></i><strong>Erro!</strong> Sua mensagem não foi enviada.
-	                            </div>';
+    		$this->msg[] = " <script>setTimeout(function() {
+                                 toastr.options = {
+                                     closeButton: true,
+                                     progressBar: true,
+                                     showMethod: 'fadeIn',
+                                     hideMethod: 'fadeOut',
+                                     timeOut: 5000
+                                 };
+                                 toastr.success('Sua mensagem foi enviada!', 'Sucesso!');
+                             }, 1800);</script>"; 
+        }else{
+            $this->msg[] = " <script>setTimeout(function() {
+                                 toastr.options = {
+                                     closeButton: true,
+                                     progressBar: true,
+                                     showMethod: 'fadeIn',
+                                     hideMethod: 'fadeOut',
+                                     timeOut: 5000
+                                 };
+                                 toastr.error('Sua mensagem não foi enviada! Tente novamente.', 'Erro!');
+                             }, 1800);</script>";
     	}
         return $this->msg;
     }
@@ -97,15 +109,27 @@ class CrtContato
     	];
 
     	if($this->contatoDao->atualizarContato($dados)){
-    		$this->msg[] = '<div class="alert alert-success">
-                                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                                  <i class="icon-ok"></i><strong>Sucesso!</strong> Sua mensagem foi atualizada.
-                                </div>'; 
-    	}else{
-    		$this->msg[] = '<div class="alert alert-danger">
-	                              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-	                              <i class="icon-remove-sign"></i><strong>Erro!</strong> Sua mensagem não foi atualizada.
-	                            </div>';
+    		$this->msg[] = " <script>setTimeout(function() {
+                                 toastr.options = {
+                                     closeButton: true,
+                                     progressBar: true,
+                                     showMethod: 'fadeIn',
+                                     hideMethod: 'fadeOut',
+                                     timeOut: 5000
+                                 };
+                                 toastr.success('Os dados foram atualizados!', 'Sucesso!');
+                             }, 1800);</script>"; 
+        }else{
+            $this->msg[] = " <script>setTimeout(function() {
+                                 toastr.options = {
+                                     closeButton: true,
+                                     progressBar: true,
+                                     showMethod: 'fadeIn',
+                                     hideMethod: 'fadeOut',
+                                     timeOut: 5000
+                                 };
+                                 toastr.error('Os dados não foram atualizados! Tente novamente.', 'Erro!');
+                             }, 1800);</script>";
     	}
         return $this->msg;
     }
