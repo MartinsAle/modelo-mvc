@@ -1,16 +1,16 @@
 <?php 
 
 /**
- * Classe que cria os atributos do objeto contato. A classe atribui e captura os dados informados no formulário da pagina contato.php
+ * Classe que cria os atributos do objeto contato. A classe atribui e captura os dados informados no formulÃ¡rio da pagina contato.php
  */
 class Contato 
 {
     /**
-     * private $nome: nome do usuário 
-     * private $sobrenome: sobrenome do usuário 
-     * private $email: email do usuário 
+     * private $nome: nome do usuÃ¡rio 
+     * private $sobrenome: sobrenome do usuÃ¡rio 
+     * private $email: email do usuÃ¡rio 
      * private $assunto: assunto da mensagem 
-     * private $mensagem: mensagem do usuário 
+     * private $mensagem: mensagem do usuÃ¡rio 
      */
     private $nome;
     private $sobrenome;

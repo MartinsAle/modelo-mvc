@@ -1,5 +1,5 @@
 <meta name="description" content="Entre em contato conosco.">
-<meta name="author" content="Proideas Agência Digital">
+<meta name="author" content="Proideas AgÃªncia Digital">
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="Content-Language" content="pt-BR" />
@@ -13,7 +13,6 @@
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="">
 <meta property="og:image:height" content="">
-<meta property="og:type" content="website">
 <meta name="robots" content="ALL">
 <meta name="googlebot" content="INDEX,FOLLOW" />
 <meta name="keywords" content="modelo mvc, proideas, criar sites, agencia digital">

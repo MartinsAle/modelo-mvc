@@ -12,7 +12,7 @@
         <a class="nav-link disabled" href="contato/">Contato</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="documentacao/">Documentação MVC</a>
+        <a class="nav-link disabled" href="documentacao/">DocumentaÃ§Ã£o MVC</a>
       </li>
     </ul>
     <form class="form-inline mt-2 mt-md-0">

@@ -1,7 +1,7 @@
 <?php 
 
 /**
- * class ContatoDAO: classe que controla a lógica de cadastro, atualização, visualização e exclusão dos dados vindos do formulário de contato. A classe extende do arquivo DataBase.php que inicia o objeto db (data base) da classe DataBase que manipula os camandos do CRUD.
+ * class ContatoDAO: classe que controla a lÃ³gica de cadastro, atualizaÃ§Ã£o, visualizaÃ§Ã£o e exclusÃ£o dos dados vindos do formulÃ¡rio de contato. A classe extende do arquivo DataBase.php que inicia o objeto db (data base) da classe DataBase que manipula os camandos do CRUD.
  */
 require_once('library/data/DataBase.php');
 
@@ -13,7 +13,7 @@ class ContatoDAO extends DataBase
     private $_tabela = 'tb_contato';
 
     /**
-     * getAll(): método que retorna do banco de dados todos os registros da tabela tb_contato
+     * getAll(): mÃ©todo que retorna do banco de dados todos os registros da tabela tb_contato
      */
     public function getAll()
     {
@@ -21,7 +21,7 @@ class ContatoDAO extends DataBase
     }
 
     /**
-     * getById(): método que retorna um registro específico no banco de dados através de um id previamente informado
+     * getById(): mÃ©todo que retorna um registro especÃ­fico no banco de dados atravÃ©s de um id previamente informado
      */
     public function getById($idcontato)
     {
@@ -30,7 +30,7 @@ class ContatoDAO extends DataBase
     }
 
     /**
-     * cadastrarContato(): método que cadastra os dados do formulário de contato na tabela tb_contato
+     * cadastrarContato(): mÃ©todo que cadastra os dados do formulÃ¡rio de contato na tabela tb_contato
      */
     public function cadastrarContato($dados)
     {
@@ -50,7 +50,7 @@ class ContatoDAO extends DataBase
     }
 
     /**
-     * atualizarContato(): método que atualiza um registro na tabela tb_contato
+     * atualizarContato(): mÃ©todo que atualiza um registro na tabela tb_contato
      */
     public function atualizarContato($dados)
     {

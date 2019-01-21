@@ -1,5 +1,5 @@
 <meta name="description" content="Modelo MVC utilizado nos sites da proideas.">
-<meta name="author" content="Proideas Agência Digital">
+<meta name="author" content="Proideas AgÃªncia Digital">
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="Content-Language" content="pt-BR" />

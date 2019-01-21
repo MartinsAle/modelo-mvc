@@ -6,6 +6,6 @@ switch (@$Url[0]) {
 		break;			
 
 	default:
-		// echo 'Erro ao incluir p·gina de controle!';
+		// echo 'Erro ao incluir p√°gina de controle!';
 		break;
 }

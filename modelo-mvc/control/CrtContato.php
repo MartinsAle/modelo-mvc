@@ -1,16 +1,16 @@
 <?php  
 
 /**
- * class CrtContato: classe que controla os mÈtodos de visualizaÁ„o, atualizaÁ„o, cadastro e exclus„o dos dados vindos do formul·rio de contato.
+ * class CrtContato: classe que controla os m√©todos de visualiza√ß√£o, atualiza√ß√£o, cadastro e exclus√£o dos dados vindos do formul√°rio de contato.
  */
 require_once('model/DAO/ContatoDAO.php');
 require_once('model/Bean/Contato.php');
 class CrtContato 
 {
     /**
-     * private $contatoDao: atributo que receber· o objeto da classe Contato
-     * private $contato: atributo que receber· o objeto da classe ContatoDAO
-     * private $msg: atributo que receber· um array com uma mensagem de sucesso ou insucesso ao executar um mÈtodo 
+     * private $contatoDao: atributo que receber√° o objeto da classe Contato
+     * private $contato: atributo que receber√° o objeto da classe ContatoDAO
+     * private $msg: atributo que receber√° um array com uma mensagem de sucesso ou insucesso ao executar um m√©todo 
      */
     private $contatoDao;
     private $contato;
@@ -27,7 +27,7 @@ class CrtContato
     }
 
     /**
-     * getAll(): mÈtodo que retorna do banco de dados todos os registros da tabela tb_contato
+     * getAll(): m√©todo que retorna do banco de dados todos os registros da tabela tb_contato
      *
      * @return string
      * @author 
@@ -38,7 +38,7 @@ class CrtContato
     }
 
     /**
-     * getById(): mÈtodo que retorna um registro especÌfico no banco de dados atravÈs de um id previamente informado
+     * getById(): m√©todo que retorna um registro espec√≠fico no banco de dados atrav√©s de um id previamente informado
      *
      * @return string
      * @author 
@@ -50,7 +50,7 @@ class CrtContato
     }
 
     /**
-     * cadastrarContato(): mÈtodo que cadastra os dados do formul·rio de contato na tabela tb_contato
+     * cadastrarContato(): m√©todo que cadastra os dados do formul√°rio de contato na tabela tb_contato
      *
      * @return string
      * @author 
@@ -85,14 +85,14 @@ class CrtContato
                                      hideMethod: 'fadeOut',
                                      timeOut: 5000
                                  };
-                                 toastr.error('Sua mensagem n„o foi enviada! Tente novamente.', 'Erro!');
+                                 toastr.error('Sua mensagem n√£o foi enviada! Tente novamente.', 'Erro!');
                              }, 1800);</script>";
     	}
         return $this->msg;
     }
 
     /**
-     * atualizarContato(): mÈtodo que atualiza um registro na tabela tb_contato
+     * atualizarContato(): m√©todo que atualiza um registro na tabela tb_contato
      *
      * @return string
      * @author 
@@ -128,7 +128,7 @@ class CrtContato
                                      hideMethod: 'fadeOut',
                                      timeOut: 5000
                                  };
-                                 toastr.error('Os dados n„o foram atualizados! Tente novamente.', 'Erro!');
+                                 toastr.error('Os dados n√£o foram atualizados! Tente novamente.', 'Erro!');
                              }, 1800);</script>";
     	}
         return $this->msg;

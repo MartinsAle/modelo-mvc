@@ -3,7 +3,7 @@
   <div class="py-5 text-center">
     <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
     <h2>Entre em contato conosco</h2>
-    <p class="lead">Deixe sua mensagem com informando sua dúvida ou nos mande a sua sugestão!</p>
+    <p class="lead">Deixe sua mensagem com informando sua dÃºvida ou nos mande a sua sugestÃ£o!</p>
   </div>
 
   <div class="row">
@@ -33,7 +33,7 @@
             <label for="email">E-mail</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="nome@exemplo.com" required>
             <div class="invalid-feedback">
-              Informe um e-mail válido
+              Informe um e-mail vï¿½lido
             </div>
           </div>
           <div class="col-md-6 mb-3">

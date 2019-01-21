@@ -1,8 +1,8 @@
 <?php 
-    header('Content-type: text/html; charset=ISO-8859-1');
-    // INCLUI O ARQUIVO DE CONFIGURAÇÃO DE REQUISIÇÃO DA PASTA VIEW
+    // header('Content-type: text/html; charset=ISO-8859-1');
+    // INCLUI O ARQUIVO DE CONFIGURAÃ‡ÃƒO DE REQUISIÃ‡ÃƒO DA PASTA VIEW
     require_once('views/include/config.php');
-    // INCLUI O ARQUIVO DE CONTROLE DE CÓDIGOS PHP DE CADA PÁGINA, EXEMPLO: ARQUIVO DE CADASTRO DE CLIENTES
+    // INCLUI O ARQUIVO DE CONTROLE DE CÃ“DIGOS PHP DE CADA PÃGINA, EXEMPLO: ARQUIVO DE CADASTRO DE CLIENTES
     require_once('views/include/controle_codigos_php_paginas.php');
 ?>
 <!doctype html>
